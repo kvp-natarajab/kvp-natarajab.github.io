@@ -107,7 +107,7 @@ table {
 	height: auto;
 	background-image:url("../images/background.jpg");
 	background-size:100%;
-	padding: 10px 0px;
+	padding: 20px 0px;
 	width:100%;
 }
 .reg-form{
@@ -305,9 +305,10 @@ table {
 	height: auto;
 	background-color: #000;
 	text-align: center;
-	padding:15px 0px;
+	padding:20px 0px;
 	margin:0 auto;
 	font-size:12px;
+
 }
 
 .foot .copy{
