@@ -83,9 +83,18 @@ function validate_lastname(lastName){
 }
 
 function validate_email(email){
+	var pattern = /^\w+@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$/;
 	if(email==""){
 			if(!isTrue){
 				msg="Please enter your email";
+				isTrue=true;
+			}
+			$("#email").css("border","1px solid red");
+			call_printmsg(msg);
+			return false;
+	}else if(!pattern.test(email)){
+			if(!isTrue){
+				msg="Please enter valid email";
 				isTrue=true;
 			}
 			$("#email").css("border","1px solid red");
