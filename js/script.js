@@ -23,12 +23,12 @@ $(function(){
 
 	});
 
-	$("#closeMsg").click(function(){
-		$("#error").hide(500);
+	$("#error-close").click(function(){
+		$(".error-info").hide(500);
 	});
 
-	$("#signInPassword").keypress(function(){
-		 $("#signInSubmit").prop("disabled",false);
+	$("#login-Password").keypress(function(){
+		 $("#login-submit").prop("disabled",false);
 	});
 	remove_error();
 
@@ -122,6 +122,6 @@ function validate_password(password){
 		
 }
 function call_printmsg(msg){
-			$("#error").show(500);
+			$(".error-info").show(500);
 			$("#error-msg").text(msg);
 }
